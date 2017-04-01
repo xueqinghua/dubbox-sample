@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService{
 	@Path("save")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public void save(User user) {
-		System.out.println("save -----------------------------------");
+		//System.out.println("save -----------------------------------");
 		
 	}
 
@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public User get(String id) {
 		
-		System.out.println("get -----------------------------------");
+		//System.out.println("get -----------------------------------");
 		User user = new User();
 		user.setId(id);
 		user.setName("name_"+id);

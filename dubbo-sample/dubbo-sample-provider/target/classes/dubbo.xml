@@ -16,7 +16,7 @@
     <dubbo:registry address="zookeeper://192.168.8.92:2181" timeout = "200000"/>
     <!-- <dubbo:registry address="zookeeper://localhost:2181" timeout = "20000"/> -->
     <!-- 用dubbo协议在20880端口暴露服务 -->
-    <dubbo:protocol name="dubbo" port="20880"  threadpool = "cached" threads="1000" serialization="kryo"/>
+    <dubbo:protocol name="dubbo" port="20880"  threadpool = "cached" threads="1000" serialization="kryo" dispatcher="direct"/>
     <dubbo:protocol name = "rest" server="tomcat" port="9090" contextpath="provider"/>
     <dubbo:annotation package= "com.europe.england.dubbo" />
     
